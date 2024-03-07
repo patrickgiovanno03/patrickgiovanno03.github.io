@@ -65,14 +65,14 @@
     <main class="mdl-layout__content mat-typography">
       <div class="page-content">
         <div class="containerr">
-            <div class="darken">
-                <div class="text-left ms-5 ps-5" style="margin-top: 5em; font-size: 50px; font-weight: bold;" id="title">Title</div>
-                <div class="text-left ms-5 ps-5" style="font-size: 30px; font-weight: bold;" id="title">About this course</div>
-                <div class="text-left ms-5 ps-5" style="width: 40%; font-size: clamp(20px, 1.3vw, 100px);" id="description"></div>
+            <div class="darken" style="">
+                <div class="text-left ms-5 ps-5" style="font-size: 50px; font-weight: bold;" id="title">Title</div>
+                <div class="text-left ms-5 ps-5" style="font-size: 30px; font-weight: bold;" id="">About this course</div>
+                <div class="text-left ms-5 ps-5" style="font-size: clamp(20px, 1.3vw, 100px);" id="description"></div>
                 <div class="text-left ms-5 ps-5 mt-4">
-                    <button class="btn btn-outline-light rounded" onclick="window.location = 'index.html'"><big><big><i class="fa-solid fa-home"></i>
+                    <button class="mb-5 btn btn-outline-light rounded" onclick="window.location = 'index.html'"><big><big><i class="fa-solid fa-home"></i>
                     Home</big></big></button>
-                    <button class="ms-2 btn btn-light rounded" onclick="window.location = 'index.html'"><big><big><i class="fa-solid fa-arrow-pointer"></i>
+                    <button class="mb-5 ms-2 btn btn-light rounded" onclick="window.location = 'index.html'"><big><big><i class="fa-solid fa-arrow-pointer"></i>
                     Join</big></big></button>
                 </div>
             </div>
@@ -127,19 +127,41 @@
   body {
     font-family: 'Lexend' !important;
   }
+
+  #description {
+    width: 40vw
+  }
+
+  #title {
+    margin-top: 5em; 
+  }
+
+  @media (max-width: 768px) {
+    #description {
+      width: 70vw
+    }
+
+    #title {
+    margin-top: 3em; 
+    }
+  }
   .containerr {
-       width: 100%; height: 100vh; 
+       width: 100%; height: 100%; 
        position: absolute;
        top: 0;
-       left: 0;
+       left: 0;       
+       display: block;
+        overflow: auto;
     }
     .darken {
        float: left;
        position: absolute;
        left: 0px;
        top: 0px;
-       width: 100%; height: 100vh; 
+       width: 100%; height: 100%; 
        z-index: 1000;
+       display: block;
+        overflow: auto;
        
        padding: 5px;
        color: #FFFFFF;
