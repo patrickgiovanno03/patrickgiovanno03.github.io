@@ -50,6 +50,7 @@ fetch(url)
   });
 
 if ('indexedDB' in window) {
+    // alert("tes")
   readAllData('workouts')
     .then(function(data) {
       if (!networkDataReceived) {

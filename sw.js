@@ -16,6 +16,8 @@ var STATIC_FILES = [
   '/src/js/material.min.js',
   '/src/css/app.css',
   '/src/css/feed.css',
+  '/src/images/wlpp.jpg',
+  '/src/images/error.png',
   'https://fonts.googleapis.com/css?family=Roboto:400,700',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
   'https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css'
@@ -74,18 +76,18 @@ function isInArray(string, array) {
 
 self.addEventListener('fetch', function (event) {
 
-  var url = 'https://ambwku-default-rtdb.asia-southeast1.firebasedatabase.app/posts';
+  var url = 'https://ambwku-default-rtdb.asia-southeast1.firebasedatabase.app/workouts';
   if (event.request.url.indexOf(url) > -1) {
     event.respondWith(fetch(event.request)
       .then(function (res) {
         var clonedRes = res.clone();
-        clearAllData('posts')
+        clearAllData('workouts')
           .then(function () {
             return clonedRes.json();
           })
           .then(function (data) {
             for (var key in data) {
-              writeData('posts', data[key])
+              writeData('workouts', data[key])
             }
           });
         return res;

@@ -99,9 +99,8 @@
             })
             .then(function (data) {
               networkDataReceived = true;
-              localStorage.setItem('now', JSON.stringify(data));
-              console.log(data);
               localStorage.setItem(id, JSON.stringify(data));
+              localStorage.setItem('curPage', JSON.stringify(data));
               
               window.location.href = '/details.html'; 
             })
@@ -110,11 +109,12 @@
               window.location.href = '/offline.html'; 
             });
         } else {
-          localStorage.setItem('now', localStorage.getItem(id));
+        //   localStorage.setItem('curPage', localStorage.getItem(id));
               
           window.location.href = '/details.html'; 
         }
       });
+
       function downloadApp() {
         if (deferredPrompt) {
           deferredPrompt.prompt();
