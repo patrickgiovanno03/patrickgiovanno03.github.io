@@ -105113,12 +105113,12 @@ k=A.ez(new A.atS(o),null,n)
 A.bv(l,!1).dY(k)}case 4:return A.w(null,r)}})
 return A.x($async$tb,r)},
 G(a){var s,r,q=this,p=null,o=t.p,n=A.b8(A.dD(B.ar,A.b([A.b2(p,p,B.m,p,p,B.EA,p,p,p,p,p,p,p,p)],o),B.t,B.UM),150,150),m=q.a
-m=A.cM(new A.X(new A.a0(8,8,8,8),A.aK(A.b([B.Ci,new A.e9(B.hC,p,p,n,p),B.mU,A.Z(m.c,p,p,p,B.XV,p,p,p),A.Z("@"+m.d,p,p,p,B.YJ,p,p,p)],o),B.n,B.k,B.j),p),3)
+m=A.aK(A.b([B.Ci,new A.e9(B.hC,p,p,n,p),B.mU,A.Z(m.c,p,p,p,B.XV,p,p,p),A.Z("@"+m.d,p,p,p,B.YJ,p,p,p)],o),B.n,B.k,B.j)
 n=A.b([A.aIa(B.Kr,q.ga4f(),"Transactions History"),B.HV],o)
 s=q.gasf()
 s=A.b([A.aIa(B.Kp,s,"My Products"),A.aIa(B.Ky,s,"Seller Profile")],o)
 r=A.Z("Sign out",p,p,p,A.bb(p,p,B.cV,p,p,p,p,p,p,p,p,16,p,p,B.ee,p,p,!0,p,p,p,p,p,p,p,p),p,p,p)
-return new A.X(B.e6,A.fr(p,p,A.aIZ(A.b([m,new A.xs("Buyer",n,p),B.fx,new A.xs("Seller",s,p),B.fx,new A.xs(p,A.b([B.HW,B.HX,B.fx,A.rC(p,A.d_(B.Ku,B.cV,p,25),q.ga5h(),p,r,p)],o),p)],o),p),p,p,p),p)}}
+return new A.X(B.e6,A.fr(p,p,A.aK(A.b([A.cM(A.aIZ(A.b([new A.X(new A.a0(8,8,8,8),m,p),new A.xs("Buyer",n,p),B.fx,new A.xs("Seller",s,p),B.fx,new A.xs(p,A.b([B.HW,B.HX,B.fx,A.rC(p,A.d_(B.Ku,B.cV,p,25),q.ga5h(),p,r,p)],o),p)],o),p),1)],o),B.n,B.k,B.j),p,p,p),p)}}
 A.atU.prototype={
 $1(a){return new A.qq(null)},
 $S:241}
